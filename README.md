@@ -1,21 +1,13 @@
-TweakForge - build iOS jailbreak tweaks from a source .zip (Arch Linux)
+## TweakBuilder - A automatic iOS tweak building CLI utility for Arch Linux to built tweaks from source code.
 
-1. Unzip this folder anywhere
-2. Open a terminal in it and run:   ./start.sh
-   - First run offers to install Theos, the iOS SDKs and ldid (sudo password once)
-3. Use the menu:
-     Up/Down  move      Left/Right  change a setting      Enter  select
-     B  build           Q  quit
-   Set: Source ZIP (built-in file browser, or press / to paste a path),
-        Package scheme, Architectures, iOS version, Debug build, Output folder.
-   Then pick BUILD TWEAK. Your choices are remembered for next time.
-   The .deb is saved to ~/TweakForge-Output (or the folder you chose).
+To get started run the ./start.sh script as sudo first. Then run the ./start.sh script normally.
+There is also a web browser version, run the script and select **Open Web UI**.
 
-Prefer a browser?     ./tweakforge.py web
-Prefer one command?   ./tweakforge.py build MyTweak.zip -o ~/debs -s rootless -a arm64 -t 15.0
+## More info:
+ - This is tested only on arch linux
+ - The web UI isn't made by me, will be changed in the next update.
 
-Notes
-- The zip needs a Theos Makefile in it.
-- "Auto detect" keeps whatever the tweak's Makefile says; if it says nothing, Theos defaults apply (rootful).
-- Roothide needs the roothide fork of Theos.
-- Only build source you trust: a Makefile can run any command.
+## Credits:
+ - miron302 (me) for making the project.
+ - Claude for coding most of it.
+ - mekabrine for the web UI in the first version.
